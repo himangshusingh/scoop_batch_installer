@@ -45,7 +45,7 @@ IF %M%==3 GOTO EXT
 setlocal EnableDelayedExpansion
 
 SET i=0
-FOR /F %%a IN (%~dp0\packages.txt) do (
+FOR /F %%a IN (%~dp0\install_list.txt) do (
    SET /A i+=1
    SET array[!i!]=%%a
 )
